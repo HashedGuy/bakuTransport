@@ -86,10 +86,11 @@ export default function MetroTripsViz({
   const availableMonths = useMemo(() => {
     const s = new Set<string>();
     for (const d of combinedDaily) s.add(monthFromIsoDate(d.date));
-    return Array.from(s).sort((a, b) => a.localeCompare(b));
+    // Latest month first (descending)
+    return Array.from(s).sort((a, b) => b.localeCompare(a));
   }, [combinedDaily]);
 
-  const defaultMonth = availableMonths[availableMonths.length - 1] || "—";
+  const defaultMonth = availableMonths[0] || "—";
   const [selectedMonth, setSelectedMonth] = useState(defaultMonth);
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
