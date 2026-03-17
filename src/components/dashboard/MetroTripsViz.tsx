@@ -162,6 +162,9 @@ export default function MetroTripsViz({
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <div className="text-sm font-semibold text-ink">{t.dailyTrips}</div>
+              <span className="inline-flex items-center rounded-full border border-violet-500/25 bg-violet-500/10 px-2 py-1 text-[11px] font-semibold text-violet-700">
+                {t.subwayTag}
+              </span>
               <div className="relative">
                 <button
                   type="button"
@@ -260,7 +263,12 @@ export default function MetroTripsViz({
         <section className="rounded-3xl border border-black/10 bg-cream p-6">
         <div className="flex items-end justify-between gap-3">
           <div>
-            <div className="text-sm font-semibold text-ink">{t.topStationsCombined}</div>
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="text-sm font-semibold text-ink">{t.topStationsCombined}</div>
+              <span className="inline-flex items-center rounded-full border border-violet-500/25 bg-violet-500/10 px-2 py-1 text-[11px] font-semibold text-violet-700">
+                {t.subwayTag}
+              </span>
+            </div>
             <div className="text-xs text-black/60">{t.topStationsSubtitle}</div>
           </div>
         </div>
@@ -302,7 +310,12 @@ export default function MetroTripsViz({
         </section>
 
         <section className="rounded-3xl border border-black/10 bg-cream p-6">
-        <div className="text-sm font-semibold text-ink">{t.weekdayPattern}</div>
+        <div className="flex flex-wrap items-center gap-2">
+          <div className="text-sm font-semibold text-ink">{t.weekdayPattern}</div>
+          <span className="inline-flex items-center rounded-full border border-violet-500/25 bg-violet-500/10 px-2 py-1 text-[11px] font-semibold text-violet-700">
+            {t.subwayTag}
+          </span>
+        </div>
         <div className="mt-1 text-xs text-black/60">{t.weekdaySubtitle}</div>
         <div className="mt-4 h-80 rounded-2xl border border-black/10 bg-white/70 p-3 sm:p-4">
           <Bar

@@ -17,6 +17,7 @@ export const UI_COPY: Record<
     weekdaySubtitle: string;
     tooltipDate: string;
     tooltipTrips: string;
+    subwayTag: string;
     // error
     dataUnavailableTitle: string;
     dataUnavailableHint: string;
@@ -35,6 +36,7 @@ export const UI_COPY: Record<
     weekdaySubtitle: "Average trips per weekday (2025 vs 2026)",
     tooltipDate: "Date",
     tooltipTrips: "Trips",
+    subwayTag: "Subway",
     dataUnavailableTitle: "Data temporarily unavailable",
     dataUnavailableHint: "This page is dynamic; in production it will load data at request-time.",
   },
@@ -51,6 +53,7 @@ export const UI_COPY: Record<
     weekdaySubtitle: "Həftə günləri üzrə orta gediş (2025 və 2026)",
     tooltipDate: "Tarix",
     tooltipTrips: "Gediş",
+    subwayTag: "Metro",
     dataUnavailableTitle: "Məlumat müvəqqəti əlçatan deyil",
     dataUnavailableHint: "Bu səhifə dinamikdir; prod mühitdə sorğu zamanı yüklənəcək.",
   },
